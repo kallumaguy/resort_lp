@@ -1,0 +1,237 @@
+.pg-module {
+  position: relative;
+  /* padding: 360px 0; */
+  padding: 0px 20px;
+}
+
+.pg-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(/package-description-bg.webp);
+  background-size: cover;
+  height: 130dvh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  /* Adjust this value to position the image higher or lower */
+  box-sizing: border-box;
+  gap: 0;
+  z-index: 2;
+  border-radius: 0 20rem 0 0;
+  position: relative;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pg-img {
+  max-width: 94%;
+  /* Adjust the max-width as needed */
+  object-fit: contain;
+  margin: 0;
+  z-index: 2;
+}
+
+.pg-box {
+  position: relative;
+  width: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 0 120px 0 0;
+  z-index: 3;
+}
+
+
+.package-title {
+  object-fit: contain;
+  height: 30%;
+  width: 30%;
+  z-index: 4;
+}
+
+
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  /* max-width: 600px; Adjust as needed */
+}
+
+.grid-item {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: center; */
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.grid-item img.icon {
+  width: 50px;
+  height: 50px;
+  padding-right: 15px;
+  border-right: 2px solid;
+}
+
+.grid-item img.bar {
+  width: 2px;
+  height: 70px;
+  margin: 10px;
+}
+
+.grid-item .text {
+  letter-spacing: 2px;
+  font-size: 21px;
+  color: #333;
+  font-family: 'Gilroy-Light';
+  text-align: left;
+  padding-left: 20px;
+}
+
+.grid-item .text-price {
+  letter-spacing: 2px;
+  font-size: 21px;
+  color: #333;
+  font-family: 'Gilroy-Bold';
+  text-align: left;
+  padding-left: 20px;
+}
+
+.text-price span {
+  font-family: 'Gilroy-Light';
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .grid-item {
+    flex: 0 0 calc(30% - 15px);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid-item {
+    flex: 0 0 calc(40%);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up to large devices) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up to medium devices) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+  .package-title {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 75%;
+    position: relative;
+    left: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .grid-item {
+    padding: 5px 0;
+    flex: 0 0 calc(50% - 5px);
+  }
+
+  .grid-item img.icon {
+    width: 35px;
+    height: 35px;
+    border-right: 1px solid;
+  }
+
+  .grid-item .text {
+    font-size: 19px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    /* margin-right: 6rem; */
+  }
+
+  .grid-item:nth-child(3) .text{
+    margin-right: 6rem;
+  }
+
+  .grid-item .text-price {
+    font-size: 19px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+  }
+
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .pg-image-container {
+    background-image: url(/package-description-bg-mobile.webp);
+    height: 95vh;
+    border-radius: 0 8rem 0 0;
+    background-size: cover;
+  }
+
+  .pg-module {
+    padding: 0 10px;
+  }
+
+  .pg-box {
+    border-radius: 0 100px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .package-title {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 75%;
+    position: relative;
+    left: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .grid-item {
+    padding: 5px 0;
+    flex: 0 0 calc(50% - 5px);
+  }
+
+  .grid-item img.icon {
+    width: 25px;
+    height: 25px;
+    border-right: 1px solid;
+  }
+
+  .grid-item .text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    /* margin-right: 6rem; */
+  }
+
+  .grid-item .text-price {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .pg-image-container {
+    height: 80vh;
+  }
+}

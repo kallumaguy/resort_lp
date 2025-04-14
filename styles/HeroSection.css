@@ -1,0 +1,338 @@
+.hero-section {
+  margin: 0;
+  padding: 0;
+  height: 100svh;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/forestlandscape-1-1@2x.webp');
+
+}
+
+.hero-section::before {
+  content: "";
+  height: 75%;
+  width: 100%;
+  background: url(/untitled101-1@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  left: -24rem;
+  top: -5rem;
+}
+
+.hero-section::after {
+  content: "";
+  height: 100%;
+  width: 12%;
+  background: url(/untitled102-1@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: absolute;
+  z-index: 5;
+  right: -4.5rem;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.center-container {
+  width: 100%;
+  max-width: 1585px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Images */
+.monsoon-offer {
+  max-width: 40%;
+  object-fit: contain;
+  margin-top: -3rem;
+  z-index: 4;
+}
+
+.tadoba-icon {
+  object-fit: contain;
+  width: 15%;
+  z-index: 4;
+  bottom: 7rem;
+}
+
+.leftie {
+
+  /* Align items to the top */
+  max-width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.rightie {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin-top: 5px;
+  z-index: 2;
+  position: relative;
+  width: 15%;
+}
+
+/* Caption */
+.titan-caption {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 3;
+  top: 5rem;
+}
+
+.caption-content {
+  text-align: center;
+}
+
+.font-alt {
+  font-family: 'Gilroy-Light';
+  letter-spacing: 2px;
+}
+
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
+.mb-20 {
+  margin-bottom: 30px !important;
+}
+
+.titan-title-size-1 {
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.titan-title-size-4 {
+  letter-spacing: 24px;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+a,
+.btn {
+  transition: all 0.125s ease-in-out 0s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  box-shadow: none;
+  font-family: 'Gilroy-Light';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding: 10px 40px;
+  /* background: transparent; */
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  color: var(--prime-yellow);
+  background-color: var(--prime-green);
+  border-radius: 34px;
+}
+
+.btn:hover {
+  background: white;
+  color: #111;
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .image-container {
+    overflow: hidden;
+  }
+
+  .leftie {
+    left: -550px;
+    top: -150px;
+  }
+
+  .rightie {
+    left: 355px;
+    top: 10px;
+  }
+
+  .tadoba-icon {
+    width: 15%;
+    bottom: 8rem;
+    position: relative;
+  }
+
+  .titan-caption {
+    top: 5rem;
+  }
+
+  .module {
+    padding: 0;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .hero-section::before {
+    left: -30rem;
+  }
+
+  .hero-section::after {
+    width: 20%;
+    right: -5.5rem;
+  }
+
+  .tadoba-icon {
+    height: 24%;
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+
+  .titan-caption {
+    top: 5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up to large devices) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .hero-section::before {
+    left: -30rem;
+  }
+
+  .hero-section::after {
+    width: 20%;
+    right: -5.5rem;
+  }
+
+  .tadoba-icon {
+    height: 24%;
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+
+  .titan-caption {
+    top: 5rem;
+  }
+
+  .titan-title-size-1 {
+    font-size: 19px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 15px 45px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up to medium devices) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+  .hero-section::before {
+    top: -8rem;
+    left: -30rem;
+  }
+
+  .hero-section::after {
+    width: 20%;
+    right: -3.6rem;
+  }
+
+  .tadoba-icon {
+    margin-bottom: 6rem;
+  }
+
+  .monsoon-offer {
+    max-width: 55%;
+  }
+
+  .titan-caption {
+    top: 2rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+  .hero-section::before {
+    left: -15rem;
+  }
+
+  .hero-section::after {
+    width: 34%;
+    right: -3.5rem;
+  }
+
+  .monsoon-offer {
+    max-width: 80%;
+    position: relative;
+  }
+
+  .tadoba-icon {
+    width: 50%;
+    margin-bottom: 1rem;
+    position: relative;
+    /* bottom: 10rem; */
+  }
+
+
+  .leftie {
+    left: -8rem;
+    top: -12rem;
+    max-width: 75%;
+  }
+
+  .rightie {
+    position: absolute;
+    top: 20rem;
+    left: 16rem;
+    width: 10rem;
+  }
+
+
+  .titan-title-size-1 {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .titan-caption {
+    width: 90%;
+  }
+
+  .module {
+    padding: 250px 0 250px 0;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 15px 25px;
+    border: 2px solid white;
+  }
+}
