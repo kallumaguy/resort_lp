@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('/forestlandscape-1-1@2x.webp');
+  background-image: url('/public/forestlandscape-1-1@2x.webp');
 
 }
 
@@ -16,7 +16,7 @@
   content: "";
   height: 75%;
   width: 100%;
-  background: url('/untitled101-1@2x.png');
+  background: url('/public/untitled101-1@2x.png');
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -29,7 +29,7 @@
   content: "";
   height: 100%;
   width: 12%;
-  background: url(/untitled102-1@2x.png);
+  background: url(/public/untitled102-1@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
