@@ -1,17 +1,17 @@
 /* Importing Gilroy-Bold font */
 @font-face {
   font-family: 'Gilroy-Bold';
-  src: url('/fonts/Gilroy-Bold.ttf') format('truetype');
+  src: url('/public/fonts/Gilroy-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Gilroy-Light';
-  src: url('/fonts/Gilroy-Light.ttf') format('truetype');
+  src: url('/public/fonts/Gilroy-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Gilroy-SemiBold';
-  src: url('/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  src: url('/public/fonts/Gilroy-SemiBold.ttf') format('truetype');
 }
 
 .prevent-select {
